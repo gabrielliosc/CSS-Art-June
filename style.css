@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Monofett", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10rem;
+    background-color: #D6A5B9;
+}
+p.letters {
+    animation-name: letters;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100vh;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+.container .rainbow {
+    display: flex;
+    flex-direction: column;
+}
+.red-stripe {
+    margin-left: 10rem;
+    width: 40rem;
+    height: 20rem;
+    border-top-left-radius: 20rem;
+    border-top-right-radius: 20rem;
+    border: 1rem solid;
+    border-bottom: 0;
+    border-color: #860303;
+    animation: 3.5s ease-in stripes-red;
+}
+.orange-stripe {
+    margin-left: 11rem;
+    margin-top: -19rem;
+    width: 38rem;
+    height: 19rem;
+    border-top-left-radius: 19rem;
+    border-top-right-radius: 19rem;
+    border: 1rem solid;
+    border-bottom: 0;
+    border-color: #C36C01;
+    animation: 3s ease-in stripes-orange;
+}
+.yellow-stripe {
+    margin-left: 12rem;
+    margin-top: -18rem;
+    width: 36rem;
+    height: 18rem;
+    border-top-left-radius: 18rem;
+    border-top-right-radius: 18rem;
+    border: 1rem solid;
+    border-bottom: 0;
+    border-color: #C19806;
+    animation: 2.5s ease-in stripes-yellow;
+}
+.green-stripe {
+    margin-left: 13rem;
+    margin-top: -17rem;
+    width: 34rem;
+    height: 17rem;
+    border-top-left-radius: 17rem;
+    border-top-right-radius: 17rem;
+    border: 1rem solid;
+    border-bottom: 0;
+    border-color: #015E1C;
+    animation: 2s ease-in stripes-green;
+}
+.blue-stripe {
+    margin-left: 14rem;
+    margin-top: -16rem;
+    width: 32rem;
+    height: 16rem;
+    border-top-left-radius: 16rem;
+    border-top-right-radius: 16rem;
+    border: 1rem solid;
+    border-bottom: 0;
+    border-color: #002D95;
+    animation: 1.5s ease-in stripes-blue;
+}
+.purple-stripe {
+    margin-left: 15rem;
+    margin-top: -15rem;
+    width: 30rem;
+    height: 15rem;
+    border-top-left-radius: 15rem;
+    border-top-right-radius: 15rem;
+    border: 1rem solid;
+    border-bottom: 0;
+    border-color: #650095;
+    animation: 1s ease-in stripes-purple;
+}
+.container .cloud {
+    margin-top: -1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.container .cloud img{
+    width: 20rem;
+}
+
+@keyframes letters {
+    0%   {color: #860303;}
+    20%  {color: #C36C01;}
+    40%  {color: #C19806;}
+    60%  {color: #015E1C;} 
+    80%  {color: #002D95;}   
+    100% {color: #650095;}
+}
+
+@keyframes stripes-red {
+    0%   {border-color: #D6A5B9;} 
+    100% {border-color: #860303;}
+}
+@keyframes stripes-orange {
+    0%   {border-color: #D6A5B9;}  
+    100% {border-color: #C36C01;}
+}
+@keyframes stripes-yellow {
+    0%   {border-color: #D6A5B9;}  
+    100% {border-color: #C19806;}
+}
+@keyframes stripes-green {
+    0%   {border-color: #D6A5B9;}  
+    100% {border-color: #015E1C;}
+}
+@keyframes stripes-blue {
+    0%   {border-color: #D6A5B9;}  
+    100% {border-color: #002D95;}
+}
+@keyframes stripes-purple {
+    0%   {border-color: #D6A5B9;}  
+    100% {border-color: #650095;}
+}
